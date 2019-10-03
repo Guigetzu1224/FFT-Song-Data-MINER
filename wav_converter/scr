@@ -1,4 +1,0 @@
-x=$(find . -name "*.wav" | while read f; do mv "$f" "${f%.wav}"; done)
-for song in x
-	ffmpeg -i $song.wav -vn -acodec pcm_s16le -ac 1 -ar 44100 -f wav $song.mp3
-Done
